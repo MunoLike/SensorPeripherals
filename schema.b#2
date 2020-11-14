@@ -60,9 +60,6 @@
 <wire x1="51.74" y1="0" x2="51.74" y2="53.33" width="0" layer="20"/>
 <wire x1="51.74" y1="53.33" x2="0" y2="53.33" width="0" layer="20"/>
 <wire x1="0" y1="53.33" x2="0" y2="0" width="0" layer="20"/>
-<text x="25.4" y="15.24" size="1.778" layer="16" rot="MR0">1</text>
-<text x="15.24" y="16.51" size="1.778" layer="16" rot="MR0">1</text>
-<text x="24.13" y="39.37" size="1.778" layer="16" rot="MR0">1</text>
 </plain>
 <libraries>
 <library name="pinhead">
