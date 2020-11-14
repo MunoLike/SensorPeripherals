@@ -1221,6 +1221,8 @@ Source: www.vanlong.com</description>
 <pinref part="SS_1" gate="A" pin="4"/>
 <wire x1="100.33" y1="33.02" x2="97.79" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="97.79" y1="33.02" x2="90.17" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="SS_1" gate="A" pin="3"/>
+<junction x="97.79" y="33.02"/>
 </segment>
 </net>
 <net name="N$7" class="0">

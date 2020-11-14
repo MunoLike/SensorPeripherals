@@ -4207,11 +4207,11 @@ Source: AVX .. aphvc.pdf</description>
 </class>
 </classes>
 <parts>
-<part name="FROM_BBB" library="pinhead" deviceset="PINHD-2X10" device=""/>
-<part name="OUT_LINETRACE" library="pinhead" deviceset="PINHD-2X5" device=""/>
-<part name="SS_1" library="pinhead" deviceset="PINHD-2X3" device=""/>
-<part name="SS_2" library="pinhead" deviceset="PINHD-2X3" device=""/>
-<part name="PIC16F88" library="ic-package" deviceset="DIL18" device="S"/>
+<part name="JP1" library="pinhead" deviceset="PINHD-2X10" device=""/>
+<part name="JP2" library="pinhead" deviceset="PINHD-2X5" device=""/>
+<part name="JP3" library="pinhead" deviceset="PINHD-2X3" device=""/>
+<part name="JP4" library="pinhead" deviceset="PINHD-2X3" device=""/>
+<part name="IC1" library="ic-package" deviceset="DIL18" device="S"/>
 <part name="C1" library="rcl" deviceset="C-EU" device="050-024X044"/>
 </parts>
 <sheets>
@@ -4219,11 +4219,11 @@ Source: AVX .. aphvc.pdf</description>
 <plain>
 </plain>
 <instances>
-<instance part="FROM_BBB" gate="A" x="3.81" y="60.96" rot="MR0"/>
-<instance part="OUT_LINETRACE" gate="A" x="100.33" y="68.58"/>
-<instance part="SS_1" gate="A" x="95.25" y="33.02"/>
-<instance part="SS_2" gate="A" x="95.25" y="16.51"/>
-<instance part="PIC16F88" gate="G$1" x="43.18" y="41.91"/>
+<instance part="JP1" gate="A" x="3.81" y="60.96" rot="MR0"/>
+<instance part="JP2" gate="A" x="100.33" y="68.58"/>
+<instance part="JP3" gate="A" x="95.25" y="33.02"/>
+<instance part="JP4" gate="A" x="95.25" y="16.51"/>
+<instance part="IC1" gate="G$1" x="43.18" y="41.91"/>
 <instance part="C1" gate="G$1" x="58.42" y="66.04"/>
 </instances>
 <busses>

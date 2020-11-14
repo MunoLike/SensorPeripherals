@@ -1076,6 +1076,7 @@ Source: www.vanlong.com</description>
 <part name="SUPPLY3" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY4" library="supply2" deviceset="GND" device=""/>
 <part name="OPTION" library="pinhead" deviceset="PINHD-2X2" device=""/>
+<part name="SUPPLY5" library="supply2" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1094,6 +1095,7 @@ Source: www.vanlong.com</description>
 <instance part="SUPPLY3" gate="GND" x="71.12" y="55.88"/>
 <instance part="SUPPLY4" gate="GND" x="74.93" y="34.29"/>
 <instance part="OPTION" gate="A" x="34.29" y="34.29"/>
+<instance part="SUPPLY5" gate="GND" x="102.87" y="66.04"/>
 </instances>
 <busses>
 </busses>
@@ -1194,6 +1196,11 @@ Source: www.vanlong.com</description>
 <wire x1="88.9" y1="36.83" x2="74.93" y2="36.83" width="0.1524" layer="91"/>
 <junction x="90.17" y="35.56"/>
 </segment>
+<segment>
+<pinref part="SUPPLY5" gate="GND" pin="GND"/>
+<pinref part="QF1" gate="G$1" pin="2"/>
+<wire x1="102.87" y1="68.58" x2="104.14" y2="68.58" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="N$6" class="0">
 <segment>
@@ -1212,10 +1219,7 @@ Source: www.vanlong.com</description>
 <wire x1="83.82" y1="59.69" x2="91.44" y2="59.69" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="62.23" x2="76.2" y2="62.23" width="0.1524" layer="91"/>
 <wire x1="91.44" y1="59.69" x2="99.06" y2="59.69" width="0.1524" layer="91"/>
-<wire x1="99.06" y1="59.69" x2="99.06" y2="68.58" width="0.1524" layer="91"/>
 <junction x="91.44" y="59.69"/>
-<pinref part="QF1" gate="G$1" pin="2"/>
-<wire x1="99.06" y1="68.58" x2="104.14" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="91.44" y1="59.69" x2="100.33" y2="59.69" width="0.1524" layer="91"/>
 <wire x1="100.33" y1="59.69" x2="100.33" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="SS_1" gate="A" pin="4"/>
@@ -1223,23 +1227,6 @@ Source: www.vanlong.com</description>
 <wire x1="97.79" y1="33.02" x2="90.17" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="SS_1" gate="A" pin="3"/>
 <junction x="97.79" y="33.02"/>
-</segment>
-</net>
-<net name="N$7" class="0">
-<segment>
-<pinref part="PIC16F88" gate="G$1" pin="16"/>
-<wire x1="91.44" y1="64.77" x2="97.79" y2="64.77" width="0.1524" layer="91"/>
-<wire x1="97.79" y1="64.77" x2="97.79" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="QF1" gate="G$1" pin="1"/>
-<wire x1="97.79" y1="71.12" x2="109.22" y2="71.12" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$8" class="0">
-<segment>
-<pinref part="PIC16F88" gate="G$1" pin="15"/>
-<pinref part="QF1" gate="G$1" pin="3"/>
-<wire x1="91.44" y1="62.23" x2="109.22" y2="62.23" width="0.1524" layer="91"/>
-<wire x1="109.22" y1="62.23" x2="109.22" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -1279,6 +1266,23 @@ Source: www.vanlong.com</description>
 <wire x1="39.37" y1="48.26" x2="39.37" y2="34.29" width="0.1524" layer="91"/>
 <pinref part="OPTION" gate="A" pin="4"/>
 <wire x1="39.37" y1="34.29" x2="36.83" y2="34.29" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="PIC16F88" gate="G$1" pin="15"/>
+<wire x1="91.44" y1="62.23" x2="96.52" y2="62.23" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="62.23" x2="96.52" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="QF1" gate="G$1" pin="1"/>
+<wire x1="96.52" y1="71.12" x2="109.22" y2="71.12" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$8" class="0">
+<segment>
+<pinref part="PIC16F88" gate="G$1" pin="16"/>
+<pinref part="QF1" gate="G$1" pin="3"/>
+<wire x1="91.44" y1="64.77" x2="109.22" y2="64.77" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="64.77" x2="109.22" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
